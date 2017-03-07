@@ -1,0 +1,70 @@
+.btn {
+    display: inline-block;
+    margin: 0;
+    padding: 0 15px;
+    height: 40px;
+    line-height: 40px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: $strawberry;
+    background-color: $strawberry;
+    color: white !important;
+    font-family: $gillsans;
+    font-size: 14px;
+    text-decoration: none !important;
+    transition: border-color 450ms, background-color 450ms, color 450ms !important;
+    cursor: pointer;
+
+    &:hover {
+        border-color: $cerise;
+        background-color: $cerise;
+    }
+}
+
+.btn--basic {
+    border-color: black;
+    background-color: transparent;
+    color: black !important;
+
+    &:hover {
+        border-color: black;
+        background-color: black;
+        color: white !important;
+    }
+}
+
+.btn--large {
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+@mixin btn-rsx($color) {
+    width: 160px;
+    border-color: $color;
+    background-color: $color;
+
+    &:hover {
+        border-color: $color;
+        background-color: darken($color, 15%);
+    }
+
+    .btn-icon {
+        margin-right: 12px;
+        font-size: 20px;
+        transform: translateY(1px);
+    }
+}
+
+.btn--facebook {
+    @include btn-rsx($color-facebook);
+}
+
+.btn--twitter {
+    @include btn-rsx($color-twitter);
+
+    .btn-icon {
+        margin-right: 6px;
+    }
+}

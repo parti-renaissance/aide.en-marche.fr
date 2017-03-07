@@ -1,0 +1,283 @@
+
+h1 {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.form-box {
+    display: inline-block;
+    padding: 30px 15px;
+    width: 100%;
+    max-width: 600px;
+    // height: 600px;
+    background-color: white;
+    text-align: left;
+
+    @media (max-width: $bp-xsmall) {
+        height: auto;
+
+        .form-steps {
+            margin-bottom: 30px;
+        }
+
+        .form-btn {
+            margin-top: 30px;
+        }
+
+        .form-note {
+            margin-top: 30px;
+        }
+    }
+}
+
+.form-box--compacted {
+    height: auto;
+
+    .form-steps {
+        display: none;
+    }
+
+    .form-btn {
+        margin-top: 30px;
+    }
+
+    .form-note {
+        margin-top: 30px;
+    }
+}
+
+.form-box--bordered {
+    border: solid 1px $silver;
+}
+
+.form-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 100%;
+    // max-width: 340px;
+    height: 100%;
+}
+
+.form-steps {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 250px;
+}
+
+.form-step {
+    width: 30px;
+    height: 30px;
+    line-height: 31px;
+    border-radius: 15px;
+    background-color: gray;
+    color: black;
+    font-size: 14px;
+    text-align: center;
+    opacity: .3;
+    transition: color 450ms, opacity 450ms;
+    cursor: default;
+}
+
+.form-step--is-active {
+    color: white;
+    opacity: 1;
+}
+
+.form-group {
+    margin: 25px 0;
+
+    &:first-of-type {
+        margin-top: 30px;
+    }
+}
+
+.form-text {
+    margin-top: 15px;
+    width: 100%;
+    height: 150px
+}
+
+.form-input,
+.form-select {
+    margin-top: 15px;
+    padding: 0 12px;
+    height: 40px;
+    // max-width: 340px;
+    border: 1px solid $silver;
+}
+
+.form-select-hint {
+    margin: 15px 18px 0;
+    font-size: 12px;
+
+    @media (max-width: $bp-xsmall) {
+        margin: 15px 4px 0;
+    }
+}
+#is-france {
+  display: none;
+}
+
+
+.visible {
+    display: block !important;
+}
+
+.form-inputs-address {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @media (max-width: $bp-xsmall) {
+        display: block;
+    }
+
+    .form-input {
+        padding: 0 8px;
+        height: 36px;
+        font-size: 14px;
+
+        @media (max-width: $bp-xsmall) {
+            margin-top: 12px;
+            width: 100% !important;
+        }
+    }
+
+    .form-input--number {
+        width: 50px;
+    }
+
+    .form-input--bis {
+        width: 40px;
+    }
+
+    .form-input--street {
+        width: 100px;
+    }
+
+    .form-input--road {
+        width: 120px;
+    }
+
+    .form-input--zipcode {
+        width: 100px;
+    }
+
+
+    .form-input--city {
+        width: 230px;
+    }
+}
+
+.form-checkbox {
+    float: left;
+    margin-top: 2px;
+    margin-right: 8px;
+}
+
+.form-label {
+    letter-spacing: -.2px;
+}
+
+.form-label-hint {
+    margin-top: 4px;
+    margin-left: 22px;
+    font-size: 12px;
+
+    @media (max-width: $bp-xsmall) {
+        margin-left: 2px;
+    }
+}
+
+.form-btn {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 200px;
+    height: 60px;
+    line-height: 60px;
+    border: none;
+    background-color: $strawberry;
+    color: white;
+    font-family: $gillsans;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: background-color 450ms;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $cerise;
+    }
+}
+
+.form-desc {
+    margin-top: 30px;
+}
+
+.form-note {
+    font-size: 12px;
+    letter-spacing: 0;
+}
+
+.form-copy-box {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: $bp-xsmall) {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    input {
+        margin-top: 15px;
+        width: 232px;
+        text-align: center;
+
+        @media (max-width: $bp-xsmall) {
+            width: 100%;
+        }
+    }
+
+    button {
+        margin-top: 15px;
+        cursor: copy;
+    }
+}
+
+.form-rsx-box {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 410px) {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    button {
+        margin-top: 15px;
+    }
+}
+
+
+
+
+
+.test-form-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #f2f2f2;
+    text-align: center;
+
+    .form-box {
+        margin: 64px;
+
+        @media (max-width: 700px) {
+            margin: 64px 0;
+        }
+    }
+}

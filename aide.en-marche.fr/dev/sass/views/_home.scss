@@ -1,0 +1,102 @@
+.home-section {
+    padding: 80px 0;
+}
+
+.home-section--form {
+    background: url(../img/en-marche-photo.jpg) no-repeat center;
+    background-size: cover;
+    text-align: right;
+}
+
+.home-section--vote {
+    height: 384px;
+    background: url(../img/en-marche-photo.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.home-section--query {
+    background-color: $concrete
+}
+
+.home-header-subtitle {
+    margin-top: 16px;
+}
+
+
+
+
+
+.home-exp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 80px;
+
+    @media (max-width: $bp-small) {
+        flex-direction: column;
+    }
+
+    &:nth-child(2n) {
+        flex-direction: row-reverse;
+
+        @media (max-width: $bp-small) {
+            flex-direction: column;
+        }
+    }
+}
+
+.home-exp-content {
+    width: 47.5%;
+    max-width: 540px;
+
+    @media (max-width: $bp-small) {
+        width: 100%;
+    }
+}
+
+.home-p {
+    margin-top: 32px;
+    line-height: 1.5;
+}
+
+.home-exp-img {
+    width: 47.5%;
+    max-width: 540px;
+
+    @media (max-width: $bp-small) {
+        margin-top: 32px;
+        width: 100%;
+    }
+}
+
+
+
+
+
+.home-query-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: $bp-medium) {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.home-query-box {
+    width: 100%;
+    max-width: 400px;
+    padding: 80px 15px;
+    background-color: $cerise;
+    color: white;
+    text-align: center;
+
+    @media (max-width: $bp-medium) {
+        margin-bottom: 80px
+    }
+
+    p:not(:first-child) {
+        margin-top: 32px;
+    }
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Contact Macron</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="description" content="Formulaire de contact pour le mouvemant En Marche !">
+        <meta name="author" content="En Marche !">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+        <link href="web/css/main.css" rel="stylesheet">
+        <script type="text/javascript" src="web/js/form.js"/>
+    </head>
+    <body>
+
+      <header class="header">
+          <div class="l-container header-container">
+              <nav>
+                  <ul class="header-nav-list">
+                      <li><a class="logo" href="https://en-marche.fr">En Marche !</a></li>
+                      <li><a href="https://en-marche.fr/emmanuel-macron">Emmanuel Macron</a></li>
+                      <li><a href="https://en-marche.fr/emmanuel-macron/le-programme">Projet</a></li>
+                      <li><a href="https://en-marche.fr/le-mouvement">Le Mouvement</a></li>
+                      <li><a href="https://en-marche.fr/articles/actualites">Actualités</a></li>
+                  </ul>
+              </nav>
+              <div class="header-ctas">
+                  <a class="btn btn--basic uppercase header-cta-give" href="https://adherents.en-marche.fr/adherer.html" target="_blank">Je donne</a>
+                  <a class="btn uppercase" href="https://en-marche.fr/don" target="_blank">J'adhère</a>
+                  <a class="header-cta-account" href="https://adherents.en-marche.fr/espaceperso" target="_blank">
+                      <svg width="28px" height="27px" viewBox="503 375 28 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                          <path d="M517.1737,375 C509.8977,375 503.9997,380.898 503.9997,388.174 C503.9997,395.45 509.8977,401.348 517.1737,401.348 C524.4497,401.348 530.3477,395.45 530.3477,388.174 C530.3477,380.898 524.4497,375 517.1737,375 M517.1737,376 C523.8867,376 529.3477,381.461 529.3477,388.174 C529.3477,394.886 523.8867,400.348 517.1737,400.348 C510.4607,400.348 504.9997,394.886 504.9997,388.174 C504.9997,381.461 510.4607,376 517.1737,376" stroke="none" fill="#000000" fill-rule="evenodd"></path>
+                          <path d="M517.1737,379.9834 C514.8597,379.9834 512.9837,381.8594 512.9837,384.1734 C512.9837,386.4884 514.8597,388.3644 517.1737,388.3644 C519.4877,388.3644 521.3637,386.4884 521.3637,384.1734 C521.3637,381.8594 519.4877,379.9834 517.1737,379.9834 M517.1737,380.9834 C518.9327,380.9834 520.3637,382.4144 520.3637,384.1734 C520.3637,385.9324 518.9327,387.3644 517.1737,387.3644 C515.4147,387.3644 513.9837,385.9324 513.9837,384.1734 C513.9837,382.4144 515.4147,380.9834 517.1737,380.9834" stroke="none" fill="#000000" fill-rule="evenodd"></path>
+                          <path d="M508.424568,397.153247 C510.76681,393.840331 513.821352,391.4676 517.3383,391.4676 C520.844145,391.4676 523.792095,393.805307 526.000766,397.080174 C526.155171,397.309115 526.465934,397.369538 526.694874,397.215134 C526.923815,397.060729 526.984238,396.749966 526.829834,396.521026 C524.453485,392.997537 521.263123,390.4676 517.3383,390.4676 C513.409729,390.4676 510.119924,393.02308 507.608032,396.575953 C507.448616,396.801433 507.502173,397.113453 507.727653,397.272868 C507.953133,397.432284 508.265153,397.378727 508.424568,397.153247 Z" stroke="none" fill="#000000" fill-rule="evenodd"></path>
+                      </svg>Espace perso
+                  </a>
+              </div>
+          </div>
+      </header>
+
+        <div class="test-form-container">
+
+            <div class="l-container">
+
+                <div class="form-box">
+                    <div class="form-content">
+                      <h1>Nous contacter</h1>
+                      <form  id="contact-form" method="POST"
+                      action="https://webhook.frontapp.com/forms/en_marche/049b75cd027dd514a2b4195029a1dc9dc5c6e232d5325547bb6a8ee0280a604e"
+                      enctype="multipart/form-data" accept-charset="utf-8">
+                      	<div class="form-group">
+                      		<label class="form-label" for="name">Votre Nom</label>
+                      		<input class= "form-input" type="text" name="name" required="">
+                      	</div>
+                      	<div class="form-group">
+                      		<label class="form-label" for="email">Votre Adresse Email</label>
+                      		<input class="form-input" type="email" name="email" required="">
+                      	</div>
+                      	<div class="form-group">
+                      		<select class="form-select" name="vous_etes" required="">
+                      			<option value="" disabled="disabled" selected="selected">Vous êtes</option>
+                      			<option value="Animateur">Adhérent En Marche ! et Animateur d'un comité local</option>
+                      			<option value="MembreCL">Adhérent En Marche ! et membre d'un comité local</option>
+                      			<option value="Adherent">Adhérent En Marche !, sans comité local</option>
+                      			<option value="NonAdherent">Non Adhérent</option>
+                      		</select>
+                      	</div>
+                      	<div class="form-group">
+                      		<select class="form-select" id="vous_residez" name="vous_residez" required="">
+                      			<option value="" disabled="disabled" selected="selected">Vous résidez</option>
+                      			<option value="France">Vous résidez en France</option>
+                      			<option value="Etranger">Vous résidez à l'étranger</option>
+                      		</select>
+                          <div id="is-france">
+                        		<p>
+                        			<br>
+                        			<br>
+                                Si vous résidez en France, quel est votre code postal ?
+                        		</p>
+                        		<div class="form-group">
+                        			<div>
+                        				<label class="form-labe form-label-inline" for="zipcode">Code Postal</label>
+                        				<input class="form-input form-input--zipcode"  type="number" name="zipcode" pattern="[0-9]{5}" title="PostCode">
+                        			</div>
+                        		</div>
+                          </div>
+                      		<div class="form-group">
+                      			<p>
+                                  Dites nous-en plus sur la raison de votre message
+                      			</p>
+                      			<select class="form-select" name="motif" required="">
+                      				<option value="" disabled="disabled" selected="selected"></option>
+                      				<option value="Vie_pratique">Questions pratiques sur mon adhésion ou mon comité local</option>
+                      				<option value="don">Questions sur les dons</option>
+                      				<option value="legislative">Elections législatives</option>
+                      				<option value="benevole">Je veux être bénévole</option>
+                      				<option value="desinscription">Je ne veux plus recevoir d'email d'En Marche !</option>
+                      				<option value="meeting_passe">Questions sur un meeting passé</option>
+                      				<option value="meeting_venir">Questions sur les meetings à venir</option>
+                      				<option value="interview">Demande d'interview En Marche !</option>
+                      				<option value="invitation">Inviter Emmanuel Macron ou En Marche! à un évènement</option>
+                      				<option value="autre">Autre</option>
+                      			</select>
+                      		</div>
+                      		<div class="form-group">
+                      			<label class="form-label" for="body" required="">Votre message ici :</label>
+                      			<textarea class="form-text" name="body"></textarea>
+                      		</div>
+                      		<div class="form-group center">
+                      			<button class="form-btn" type="submit">Envoyer</button>
+                      		</div>
+                      	</div>
+                      </form>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </body>
+</html>

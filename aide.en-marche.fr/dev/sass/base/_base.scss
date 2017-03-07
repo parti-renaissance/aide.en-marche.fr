@@ -1,0 +1,46 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    background: white;
+    color: black;
+    font-family: $roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: .3px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+ul,
+ol,
+li {
+    margin: 0;
+    padding: 0;
+    font-size: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+}
+
+a, a:active, a:focus, a:link, a:visited {
+    color: inherit;
+    text-decoration: underline;
+    transition: color 450ms;
+}
+
+a:hover {
+    color: rgba(0, 0, 0, .4);
+}

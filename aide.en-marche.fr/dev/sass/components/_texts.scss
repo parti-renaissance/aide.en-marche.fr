@@ -1,0 +1,21 @@
+.text-large {
+    font-family: $gillsans;
+    font-size: 34px;
+    font-weight: bold;
+    letter-spacing: -.5px;
+    line-height: 1.12;
+
+    @media (max-width: $bp-xsmall) {
+        font-size: 28px;
+    }
+}
+
+.text-medium {
+    font-family: $gillsans;
+    font-size: 24px;
+    line-height: 1.2;
+
+    @media (max-width: $bp-xsmall) {
+        font-size: 20px;
+    }
+}
