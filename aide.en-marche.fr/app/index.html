@@ -58,6 +58,10 @@
                     action="https://webhook.frontapp.com/forms/en_marche/049b75cd027dd514a2b4195029a1dc9dc5c6e232d5325547bb6a8ee0280a604e"
                     enctype="multipart/form-data" accept-charset="utf-8">
                     	<div class="form-group">
+                    		<label class="form-label" for="subject">Sujet du Message</label>
+                    		<input class= "form-input" type="text" name="subject" required="">
+                    	</div>
+                    	<div class="form-group">
                     		<label class="form-label" for="name">Votre Nom</label>
                     		<input class= "form-input" type="text" name="name" required="">
                     	</div>
@@ -97,7 +101,7 @@
                     			<p>
                                 Dites nous-en plus sur la raison de votre message
                     			</p>
-                    			<select class="form-select" name="motif" required="">
+                    			<select id="select-motif"class="form-select" name="motif" required="">
                     				<option value="" disabled="disabled" selected="selected"></option>
                     				<option value="Vie_pratique">Questions pratiques sur mon adhésion ou mon comité local</option>
                     				<option value="don">Questions sur les dons</option>
