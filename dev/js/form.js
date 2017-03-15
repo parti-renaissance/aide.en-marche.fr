@@ -21,8 +21,11 @@ init: function() {
        input.setAttribute("required", true);
 
      } else {
+
         div.classList.remove("visible");
+        input.value = "";
         input.removeAttribute("required");
+
      }
    }
 
