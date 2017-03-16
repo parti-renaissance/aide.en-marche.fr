@@ -58,10 +58,6 @@
                     action="https://webhook.frontapp.com/forms/en_marche/049b75cd027dd514a2b4195029a1dc9dc5c6e232d5325547bb6a8ee0280a604e"
                     enctype="multipart/form-data" accept-charset="utf-8">
                     	<div class="form-group">
-                    		<label class="form-label" for="subject">Sujet du Message</label>
-                    		<input class= "form-input" type="text" name="subject" required="">
-                    	</div>
-                    	<div class="form-group">
                     		<label class="form-label" for="name">Votre Nom</label>
                     		<input class= "form-input" type="text" name="name" required="">
                     	</div>
@@ -116,10 +112,14 @@
                     				<option value="autre">Autre</option>
                     			</select>
                     		</div>
+                        <div class="form-group">
+                      		<label class="form-label" for="subject">Sujet du Message</label>
+                      		<input class= "form-input" type="text" name="subject" required="">
+                      	</div>
                     		<div class="form-group">
                     			<label class="form-label" for="body" required="">Votre message ici :</label>
                     			<textarea class="form-text" name="body"></textarea>
-                    		</div>
+                    		</div>                    
                     		<div class="form-group center">
                     			<button class="form-btn" type="submit">Envoyer</button>
                     		</div>
