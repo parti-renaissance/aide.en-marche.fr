@@ -9,14 +9,14 @@
 
 ## First install
 
-- npm install
+- `npm install` or `yarn install`
 
 
 ## Watch
 
-- gulp
+- `gulp`
 
 
 ## Build
 
-- gulp build
+- `gulp build`
