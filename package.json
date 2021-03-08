@@ -19,5 +19,13 @@
     "gulp-sass": "4.1.0",
     "gulp-sourcemaps": "3.0.0",
     "gulp-uglify": "3.0.2"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepare": "yarn run snyk-protect"
+  },
+  "snyk": true,
+  "dependencies": {
+    "snyk": "^1.473.0"
   }
 }
