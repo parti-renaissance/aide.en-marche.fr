@@ -12,7 +12,7 @@
   },
   "homepage": "https://github.com/EnMarche/aide.en-marche.fr#readme",
   "devDependencies": {
-    "browser-sync": "2.26.14",
+    "browser-sync": "2.27.1",
     "gulp": "4.0.2",
     "gulp-autoprefixer": "7.0.1",
     "gulp-csso": "4.0.1",
